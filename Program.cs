@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System;
+
 int[] arrayNumeri = { 2, 6, 7, 5, 3, 9 };
 
 
@@ -46,3 +48,15 @@ int sommaElementiArray(int[] array)
 };
 
 StampaArray(arrayNumeri);
+
+StampaArray(ElevaArrayAlQuadrato(arrayNumeri));
+Console.WriteLine("Array originale:");
+StampaArray(arrayNumeri);
+
+Console.WriteLine(" ");
+Console.WriteLine("Somma dei numeri:");
+Console.WriteLine(sommaElementiArray(arrayNumeri));
+
+Console.WriteLine(" ");
+Console.WriteLine("Somma dei numeri a potenza:");
+Console.WriteLine(sommaElementiArray(ElevaArrayAlQuadrato(arrayNumeri)));
