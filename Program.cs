@@ -1,9 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System;
+int numeroUtente;
+Console.WriteLine("Quanti numeri vuoi inserire?");
+numeroUtente = Int32.Parse(Console.ReadLine());
+int[] arrayNumeri = new int [numeroUtente];
+for (int i = 0; i < numeroUtente; i++)
+{
+    Console.WriteLine("Inserisci il " + (i +1) + "numero");
+    arrayNumeri[i] = Int32.Parse(Console.ReadLine());
 
-int[] arrayNumeri = { 2, 6, 7, 5, 3, 9 };
-
+}
 
 void StampaArray(int[] array)
 {
